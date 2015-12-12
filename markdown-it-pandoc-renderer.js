@@ -188,6 +188,7 @@
 						])
 						break
 					case 'display_math':
+					case 'math':
 						node = new Node('Math', [
 							new Node('DisplayMath'),
 							strip(token.content)
