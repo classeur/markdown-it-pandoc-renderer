@@ -1,7 +1,33 @@
 /* global describe, it */
 /* eslint quotes:0, key-spacing:0, comma-spacing:0 */
 require('should')
-var render = require('..').render
+var renderer = require('..')
+var md = require('markdown-it')()
+var markdownitAbbr = require('markdown-it-abbr')
+var markdownitDeflist = require('markdown-it-deflist')
+var markdownitFootnote = require('markdown-it-footnote')
+var markdownitSub = require('markdown-it-sub')
+var markdownitSup = require('markdown-it-sup')
+var markdownitEmoji = require('markdown-it-emoji')
+
+md.set({
+	html: true,
+	breaks: true,
+	linkify: true,
+	typographer: true,
+	langPrefix: 'language-'
+})
+
+md.use(markdownitAbbr)
+md.use(markdownitDeflist)
+md.use(markdownitFootnote)
+md.use(markdownitSub)
+md.use(markdownitSup)
+md.use(markdownitEmoji)
+
+function render(str) {
+	return renderer(md.parse(str, {}))
+}
 
 describe('Header', function() {
 	it('should work properly', function() {
@@ -103,6 +129,21 @@ describe('Image', function() {
 	})
 })
 
+describe('Note', function() {
+	it('should work properly', function() {
+		render(`
+Abc.[^1]
+
+[^1]: xyz.
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"Abc."},{"t":"Note","c":[{"t":"Para","c":[{"t":"Str","c":"xyz."}]}]}]}]])
+	})
+	it('should work inline', function() {
+		render(`
+Abc.^[xyz]
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"Abc."},{"t":"Note","c":[{"t":"Para","c":[{"t":"Str","c":"xyz"}]}]}]}]])
+	})
+})
+
 describe('Emph', function() {
 	it('should work properly', function() {
 		render(`
@@ -157,6 +198,45 @@ describe('Table', function() {
 | 1 | 2 | 3 |
 | 4 | 5 | 6 |
 		`).should.eql([{"unMeta":{}},[{"t":"Table","c":[[],[{"t":"AlignDefault","c":[]},{"t":"AlignCenter","c":[]},{"t":"AlignRight","c":[]}],[0.0,0.0,0.0],[[{"t":"Plain","c":[{"t":"Str","c":"a"}]}],[{"t":"Plain","c":[{"t":"Str","c":"b"}]}],[{"t":"Plain","c":[{"t":"Str","c":"c"}]}]],[[[{"t":"Plain","c":[{"t":"Str","c":"1"}]}],[{"t":"Plain","c":[{"t":"Str","c":"2"}]}],[{"t":"Plain","c":[{"t":"Str","c":"3"}]}]],[[{"t":"Plain","c":[{"t":"Str","c":"4"}]}],[{"t":"Plain","c":[{"t":"Str","c":"5"}]}],[{"t":"Plain","c":[{"t":"Str","c":"6"}]}]]]]}]])
+	})
+})
+
+describe('DefinitionList', function() {
+	it('should work properly', function() {
+		render(`
+abc
+:  123
+		`).should.eql([{"unMeta":{}},[{"t":"DefinitionList","c":[[[{"t":"Str","c":"abc"}],[[{"t":"Plain","c":[{"t":"Str","c":"123"}]}]]]]}]])
+	})
+	it('should work with multiple defintions', function() {
+		render(`
+abc
+:  123
+:  456
+		`).should.eql([{"unMeta":{}},[{"t":"DefinitionList","c":[[[{"t":"Str","c":"abc"}],[[{"t":"Plain","c":[{"t":"Str","c":"123"}]}],[{"t":"Plain","c":[{"t":"Str","c":"456"}]}]]]]}]])
+	})
+	it('should work with multiple terms', function() {
+		render(`
+abc
+
+:  123
+
+efg
+
+:  456
+
+:  789
+		`).should.eql([{"unMeta":{}},[{"t":"DefinitionList","c":[[[{"t":"Str","c":"abc"}],[[{"t":"Para","c":[{"t":"Str","c":"123"}]}]]],[[{"t":"Str","c":"efg"}],[[{"t":"Para","c":[{"t":"Str","c":"456"}]}],[{"t":"Para","c":[{"t":"Str","c":"789"}]}]]]]}]])
+	})
+})
+
+describe('Abbrevation', function() {
+	it('should be skipped', function() {
+		render(`
+abc.
+
+*[abc]: 123
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc."}]}]])
 	})
 })
 
