@@ -2,6 +2,7 @@ var clgulp = require('clgulp')
 var gulp = clgulp(require('gulp'))
 var exec = clgulp.exec
 var util = clgulp.util
+var mocha = require('gulp-spawn-mocha')
 
 gulp.task('tag', function(cb) {
 	var version = require('./package').version
@@ -14,4 +15,11 @@ gulp.task('tag', function(cb) {
 		'git push origin master --tags',
 		'npm publish',
 	], cb)
+})
+
+gulp.task('test', function() {
+	return gulp.src('test/*.js', {
+		read: false
+	})
+		.pipe(mocha())
 })

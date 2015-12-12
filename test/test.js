@@ -1,14 +1,14 @@
 /* global describe, it */
 /* eslint quotes:0, key-spacing:0, comma-spacing:0 */
 require('should')
-var renderer = require('..')
+var renderer = require('../markdown-it-pandoc-renderer')
 var md = require('markdown-it')()
 var markdownitAbbr = require('markdown-it-abbr')
 var markdownitDeflist = require('markdown-it-deflist')
 var markdownitFootnote = require('markdown-it-footnote')
 var markdownitSub = require('markdown-it-sub')
 var markdownitSup = require('markdown-it-sup')
-var markdownitEmoji = require('markdown-it-emoji')
+var markdownitMathjax = require('markdown-it-mathjax')
 
 md.set({
 	html: true,
@@ -23,7 +23,7 @@ md.use(markdownitDeflist)
 md.use(markdownitFootnote)
 md.use(markdownitSub)
 md.use(markdownitSup)
-md.use(markdownitEmoji)
+md.use(markdownitMathjax)
 
 function render(str) {
 	return renderer(md.parse(str, {}))
@@ -48,6 +48,9 @@ describe('Para', function() {
 		render(`
 abc
 		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"}]}]])
+	})
+	it('should work not contain control characters', function() {
+		render('a\x00\x01\tb\x0B  \nc\x1F\x7F').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"b"},{"t":"LineBreak","c":[]},{"t":"Str","c":"c"}]}]])
 	})
 })
 
@@ -176,6 +179,22 @@ describe('Code', function() {
 	})
 })
 
+describe('Subscript', function() {
+	it('should work properly', function() {
+		render(`
+~abc~
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Subscript","c":[{"t":"Str","c":"abc"}]}]}]])
+	})
+})
+
+describe('Superscript', function() {
+	it('should work properly', function() {
+		render(`
+^abc^
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Superscript","c":[{"t":"Str","c":"abc"}]}]}]])
+	})
+})
+
 describe('LineBreak', function() {
 	it('should work properly', function() {
 		render('abc  \n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"LineBreak","c":[]},{"t":"Str","c":"123"}]}]])
@@ -255,5 +274,26 @@ describe('RawBlock', function() {
 abc
 </p>
 		`).should.eql([{"unMeta":{}},[{"t":"RawBlock","c":["html","<p>\nabc\n</p>\n"]}]])
+	})
+})
+
+describe('InlineMath', function() {
+	it('should work properly', function() {
+		render(`
+$abc$
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Math","c":[{"t":"InlineMath","c":[]},"abc"]}]}]])
+	})
+})
+
+describe('DisplayMath', function() {
+	it('should work properly', function() {
+		render(`
+$$abc$$
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Math","c":[{"t":"DisplayMath","c":[]},"abc"]}]}]])
+	})
+	it('should work with sections', function() {
+		render(`
+\\begin{section}1 *2* 3\\end{section}
+		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Math","c":[{"t":"DisplayMath","c":[]},"\\begin{section}1 *2* 3\\end{section}"]}]}]])
 	})
 })
