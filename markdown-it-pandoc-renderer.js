@@ -47,7 +47,7 @@
 					case 'heading_open':
 						node = new Node('Header', [
 							parseInt(token.tag.slice(1), 10),  // level
-							['', [], []], // id, classes, attrs
+							[getAttr(token, 'id'), [], []], // id, classes, attrs
 						])
 						node.c.push(renderLevel(tokens[i].level, 'heading_close'))
 						i++ // heading_close
@@ -105,6 +105,8 @@
 								var style = getAttr(tokens[i], 'style')
 								if (style === 'text-align:center') {
 									align = new Node('AlignCenter')
+								} else if (style === 'text-align:left') {
+									align = new Node('AlignLeft')
 								} else if (style === 'text-align:right') {
 									align = new Node('AlignRight')
 								}
@@ -203,7 +205,7 @@
 					case 'fence':
 					case 'code_block':
 						node = new Node('CodeBlock', [
-							['', [], []], // id, classes, attrs
+							['', token.info ? [token.info] : [], []], // id, classes, attrs
 							strip(token.content)
 						])
 						break
@@ -220,8 +222,6 @@
 						])
 						break
 					case 'softbreak':
-						result.push(new Node('Space'))
-						break
 					case 'hardbreak':
 						result.push(new Node('LineBreak'))
 						break
@@ -247,7 +247,7 @@
 							} else {
 								result.push(new Node('Space'))
 							}
-							result.push(new Node('Str', str))
+							str && result.push(new Node('Str', str))
 						})
 						break
 				}

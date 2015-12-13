@@ -1,8 +1,10 @@
 /* global describe, it */
 /* eslint quotes:0, key-spacing:0, comma-spacing:0 */
 require('should')
+var fs = require('fs')
 var renderer = require('../markdown-it-pandoc-renderer')
 var md = require('markdown-it')()
+var markdownitAnchor = require('markdown-it-anchor')
 var markdownitAbbr = require('markdown-it-abbr')
 var markdownitDeflist = require('markdown-it-deflist')
 var markdownitFootnote = require('markdown-it-footnote')
@@ -14,10 +16,10 @@ md.set({
 	html: true,
 	breaks: true,
 	linkify: true,
-	typographer: true,
 	langPrefix: 'language-'
 })
 
+md.use(markdownitAnchor)
 md.use(markdownitAbbr)
 md.use(markdownitDeflist)
 md.use(markdownitFootnote)
@@ -33,13 +35,13 @@ describe('Header', function() {
 	it('should work properly', function() {
 		render(`
 # abc
-		`).should.eql([{"unMeta":{}},[{"t":"Header","c":[1,["",[],[]],[{"t":"Str","c":"abc"}]]}]])
+		`).should.eql([{"unMeta":{}},[{"t":"Header","c":[1,["abc",[],[]],[{"t":"Str","c":"abc"}]]}]])
 	})
 	it('should work with setext', function() {
 		render(`
 abc
 ---
-		`).should.eql([{"unMeta":{}},[{"t":"Header","c":[2,["",[],[]],[{"t":"Str","c":"abc"}]]}]])
+		`).should.eql([{"unMeta":{}},[{"t":"Header","c":[2,["abc",[],[]],[{"t":"Str","c":"abc"}]]}]])
 	})
 })
 
@@ -295,5 +297,14 @@ $$abc$$
 		render(`
 \\begin{section}1 *2* 3\\end{section}
 		`).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Math","c":[{"t":"DisplayMath","c":[]},"\\begin{section}1 *2* 3\\end{section}"]}]}]])
+	})
+})
+
+describe('Markdown samples', function() {
+	it('should work properly #1', function() {
+		render(fs.readFileSync(__dirname + '/sample1.md', 'utf-8')).should.eql(require('./sample1.json'))
+	})
+	it('should work properly #2', function() {
+		render(fs.readFileSync(__dirname + '/sample2.md', 'utf-8')).should.eql(require('./sample2.json'))
 	})
 })
