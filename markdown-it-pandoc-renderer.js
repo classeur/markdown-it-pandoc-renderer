@@ -28,8 +28,9 @@
 		return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\uFFFD]/g, '')
 	}
 
-	function renderTokens(tokens, notes) {
+	function renderTokens(tokens, options, notes) {
 		var i = 0
+		options = options || {}
 		notes = notes || []
 		// Get rid of unnecessary types
 		tokens = tokens.filter(function(token) {
@@ -162,7 +163,7 @@
 						i++ // link_close
 						break
 					case 'image':
-						node = new Node('Image', [renderTokens(token.children, notes)])
+						node = new Node('Image', [renderTokens(token.children, options, notes)])
 						node.c.push([getAttr(token, 'src'), 'fig:' + getAttr(token, 'title')])
 						i++ // link_close
 						break
@@ -181,7 +182,7 @@
 						})
 						break
 					case 'inline':
-						result = result.concat(renderTokens(token.children, notes))
+						result = result.concat(renderTokens(token.children, options, notes))
 						break
 					case 'inline_math':
 						node = new Node('Math', [
@@ -222,6 +223,8 @@
 						])
 						break
 					case 'softbreak':
+						result.push(new Node(options.breaks ? 'LineBreak' : 'Space'))
+						break
 					case 'hardbreak':
 						result.push(new Node('LineBreak'))
 						break
@@ -259,9 +262,9 @@
 		return renderLevel(0)
 	}
 
-	return function(tokens) {
+	return function(tokens, options) {
 		return [{
 			unMeta: {}
-		}, renderTokens(tokens)]
+		}, renderTokens(tokens, options)]
 	}
 })

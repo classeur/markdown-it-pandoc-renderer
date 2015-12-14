@@ -14,7 +14,6 @@ var markdownitMathjax = require('markdown-it-mathjax')
 
 md.set({
 	html: true,
-	breaks: true,
 	linkify: true,
 	langPrefix: 'language-'
 })
@@ -27,8 +26,8 @@ md.use(markdownitSub)
 md.use(markdownitSup)
 md.use(markdownitMathjax)
 
-function render(str) {
-	return renderer(md.parse(str, {}))
+function render(str, options) {
+	return renderer(md.parse(str, {}), options)
 }
 
 describe('Header', function() {
@@ -200,6 +199,14 @@ describe('Superscript', function() {
 describe('LineBreak', function() {
 	it('should work properly', function() {
 		render('abc  \n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"LineBreak","c":[]},{"t":"Str","c":"123"}]}]])
+	})
+	it('should not work with two spaces', function() {
+		render('abc\n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"Space","c":[]},{"t":"Str","c":"123"}]}]])
+	})
+	it('should work with two spaces if breaks option', function() {
+		render('abc\n123', {
+			breaks: true
+		}).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"LineBreak","c":[]},{"t":"Str","c":"123"}]}]])
 	})
 })
 
