@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-pandoc-renderer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Markdown-it renderer that generates Pandoc compatible AST.",
   "main": "index.js",
   "scripts": {
