@@ -25,7 +25,7 @@
 
   function strip (str) {
     // Strip str from unprintable characters
-    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\uFFFD]/g, '')
+    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\uFFFD]/g, '').replace(/\n+$/, '')
   }
 
   function renderTokens (tokens, options, notes) {
@@ -229,7 +229,7 @@
             ])
             break
           case 'softbreak':
-            result.push(new Node(options.breaks ? 'LineBreak' : 'Space'))
+            result.push(new Node(options.breaks ? 'LineBreak' : 'SoftBreak'))
             break
           case 'hardbreak':
             result.push(new Node('LineBreak'))
@@ -256,7 +256,9 @@
               } else {
                 result.push(new Node('Space'))
               }
-              str && result.push(new Node('Str', str))
+              if (str) {
+                result.push(new Node('Str', str))
+              }
             })
             break
         }

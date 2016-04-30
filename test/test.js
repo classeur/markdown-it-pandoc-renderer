@@ -95,7 +95,7 @@ describe('CodeBlock', function () {
     render(`
     123
         abc
-    `).should.eql([{"unMeta":{}},[{"t":"CodeBlock","c":[["",[],[]],"123\n    abc\n"]}]])
+    `).should.eql([{"unMeta":{}},[{"t":"CodeBlock","c":[["",[],[]],"123\n    abc"]}]])
   })
   it('should work from fence', function () {
     render(`
@@ -103,7 +103,7 @@ describe('CodeBlock', function () {
 123
     abc
 \`\`\`
-    `).should.eql([{"unMeta":{}},[{"t":"CodeBlock","c":[["",[],[]],"123\n    abc\n"]}]])
+    `).should.eql([{"unMeta":{}},[{"t":"CodeBlock","c":[["",[],[]],"123\n    abc"]}]])
   })
 })
 
@@ -200,10 +200,10 @@ describe('LineBreak', function () {
   it('should work properly', function () {
     render('abc  \n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"LineBreak","c":[]},{"t":"Str","c":"123"}]}]])
   })
-  it('should not work with two spaces', function () {
-    render('abc\n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"Space","c":[]},{"t":"Str","c":"123"}]}]])
+  it('should not work without two spaces', function () {
+    render('abc\n123').should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"123"}]}]])
   })
-  it('should work with two spaces if breaks option', function () {
+  it('should work without two spaces if breaks option', function () {
     render('abc\n123', {
       breaks: true
     }).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Str","c":"abc"},{"t":"LineBreak","c":[]},{"t":"Str","c":"123"}]}]])
@@ -282,7 +282,7 @@ describe('RawBlock', function () {
 <p>
 abc
 </p>
-    `).should.eql([{"unMeta":{}},[{"t":"RawBlock","c":["html","<p>\nabc\n</p>\n"]}]])
+    `).should.eql([{"unMeta":{}},[{"t":"RawBlock","c":["html","<p>\nabc\n</p>"]}]])
   })
 })
 
