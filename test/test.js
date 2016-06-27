@@ -126,6 +126,11 @@ describe('Image', function () {
 ![abc](http://123)
     `).should.eql([{"unMeta":{}},[{"t":"Para","c":[{"t":"Image","c":[["",[],[]],[{"t":"Str","c":"abc"}],["http://123","fig:"]]}]}]])
   })
+  it('should work with empty src', function () {
+    render(`
+![abc]()
+    `).should.eql([{"unMeta":{}},[{"t":"Para","c":[]}]])
+  })
   it('should work with "alt"', function () {
     render(`
 ![abc](http://123 "alt")

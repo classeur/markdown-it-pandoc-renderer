@@ -166,12 +166,14 @@
             i++ // link_close
             break
           case 'image':
-            node = new Node('Image', [
-              ['', [], []], // id, classes, attrs
-              renderTokens(token.children, options, notes)
-            ])
-            node.c.push([getAttr(token, 'src'), 'fig:' + getAttr(token, 'title')])
-            i++ // link_close
+            var src = getAttr(token, 'src')
+            if (src) {
+              node = new Node('Image', [
+                ['', [], []], // id, classes, attrs
+                renderTokens(token.children, options, notes)
+              ])
+              node.c.push([src, 'fig:' + getAttr(token, 'title')])
+            }
             break
           case 'footnote_ref':
             node = new Node('Note')
