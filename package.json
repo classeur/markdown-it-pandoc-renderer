@@ -2,7 +2,7 @@
   "name": "markdown-it-pandoc-renderer",
   "version": "1.1.2",
   "description": "A Markdown-it renderer that generates Pandoc compatible AST.",
-  "main": "index.js",
+  "main": "markdown-it-pandoc-renderer.js",
   "scripts": {
     "test": "gulp test lint"
   },
