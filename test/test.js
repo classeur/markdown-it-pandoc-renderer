@@ -2,6 +2,7 @@
 /* eslint quotes:0, key-spacing:0, comma-spacing:0 */
 require('should')
 var fs = require('fs')
+var path = require('path')
 var renderer = require('../markdown-it-pandoc-renderer')
 var md = require('markdown-it')()
 var markdownitAnchor = require('markdown-it-anchor')
@@ -314,9 +315,9 @@ $$abc$$
 
 describe('Markdown samples', function () {
   it('should work properly #1', function () {
-    render(fs.readFileSync(__dirname + '/sample1.md', 'utf-8')).should.eql(require('./sample1.json'))
+    render(fs.readFileSync(path.join(__dirname, '/sample1.md'), 'utf-8')).should.eql(require('./sample1.json'))
   })
   it('should work properly #2', function () {
-    render(fs.readFileSync(__dirname + '/sample2.md', 'utf-8')).should.eql(require('./sample2.json'))
+    render(fs.readFileSync(path.join(__dirname, '/sample2.md'), 'utf-8')).should.eql(require('./sample2.json'))
   })
 })

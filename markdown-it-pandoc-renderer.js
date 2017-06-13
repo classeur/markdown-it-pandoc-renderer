@@ -25,6 +25,7 @@
 
   function strip (str) {
     // Strip str from unprintable characters
+    // eslint-disable-next-line no-control-regex
     return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\uFFFD]/g, '').replace(/\n+$/, '')
   }
 
@@ -41,6 +42,7 @@
       var result = []
       var token
       var node
+      // eslint-disable-next-line no-unmodified-loop-condition
       while (tokens[i] && tokens[i].level >= level && (!until || tokens[i].level > level || tokens[i].type !== until)) {
         token = tokens[i++]
         node = undefined
