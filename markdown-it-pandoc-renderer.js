@@ -1,4 +1,4 @@
-;(function (root, factory) {
+; (function (root, factory) {
   if (typeof exports === 'object') {
     module.exports = factory()
   } else {
@@ -7,7 +7,9 @@
 })(this, function () {
   function Node (type, c) {
     this.t = type
-    this.c = c || []
+    if (c !== undefined) {
+      this.c = c
+    }
   }
 
   function getAttr (token, name) {
@@ -56,7 +58,13 @@
             i++ // heading_close
             break
           case 'paragraph_open':
-            node = new Node(token.hidden ? 'Plain' : 'Para', renderLevel(tokens[i].level, 'paragraph_close'))
+            var c = renderLevel(tokens[i].level, 'paragraph_close')
+            if (c.length === 1 && c[0].t === 'Image') {
+              var imageInner = c[0].c[1] ? [new Node('Plain', c[0].c[1])] : []
+              node = new Node('Figure', [['', [], []], [null, imageInner], [new Node('Plain', c)]])
+            } else {
+              node = new Node(token.hidden ? 'Plain' : 'Para', c)
+            }
             i++ // paragraph_close
             break
           case 'blockquote_open':
@@ -99,7 +107,7 @@
             i++ // list_item_close
             break
           case 'table_open':
-            var aligns = []
+            var columns = []
             var headers = []
             var rows = []
             for (; tokens[i].type !== 'thead_close'; i++) {
@@ -113,31 +121,34 @@
                 } else if (style === 'text-align:right') {
                   align = new Node('AlignRight')
                 }
-                aligns.push(align)
                 i++ // th_open
-                headers.push([new Node('Plain', renderLevel(tokens[i].level, 'th_close'))])
+
+                columns.push([align, new Node('ColWidthDefault')])
+                headers.push([['', [], []], new Node('AlignDefault'), 1, 1, [new Node('Plain', renderLevel(tokens[i].level, 'th_close'))]])
               }
             }
             i++ // thead_close
             for (; tokens[i].type !== 'tbody_close'; i++) {
-              var row = []
+              var rowInner = []
+              var row = [['', [], []], rowInner]
+              var columnIdx = 0
               for (; tokens[i].type !== 'tr_close'; i++) {
                 if (tokens[i].type === 'td_open') {
                   i++ // td_open
-                  row.push([new Node('Plain', renderLevel(tokens[i].level, 'td_close'))])
+                  rowInner.push([['', [], []], headers[columnIdx][1], 1, 1, [new Node('Plain', renderLevel(tokens[i].level, 'td_close'))]])
+                  columnIdx++
                 }
               }
               rows.push(row)
             }
             i++ // tbody_close
             node = new Node('Table', [
-              [], // caption
-              aligns,
-              aligns.map(function () {
-                return 0
-              }), // widths,
-              headers,
-              rows
+              ['', [], []], // caption
+              [null, []],
+              columns,
+              [['', [], []], [[['', [], []], headers]]],
+              [[['', [], []], 0, [], rows]],
+              [['', [], []], []]
             ])
             i++ // table_close
             break
@@ -174,7 +185,7 @@
                 ['', [], []], // id, classes, attrs
                 renderTokens(token.children, options, notes)
               ])
-              node.c.push([src, 'fig:' + getAttr(token, 'title')])
+              node.c.push([src, getAttr(token, 'title')])
             }
             break
           case 'footnote_ref':
@@ -183,7 +194,7 @@
             notes.push(node)
             break
           case 'footnote_open':
-            var c = renderLevel(tokens[i].level, 'footnote_close')
+            c = renderLevel(tokens[i].level, 'footnote_close')
             i++ // footnote_close
             notes.forEach(function (note) {
               if (note.c === token.meta.id) {
@@ -275,8 +286,6 @@
   }
 
   return function (tokens, options) {
-    return [{
-      unMeta: {}
-    }, renderTokens(tokens, options)]
+    return { 'pandoc-api-version': [1, 23], 'meta': {}, 'blocks': renderTokens(tokens, options) }
   }
 })

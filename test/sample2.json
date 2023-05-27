@@ -1,1 +1,2751 @@
-[{"unMeta":{}},[{"t":"Header","c":[1,["an-h1-header",[],[]],[{"t":"Str","c":"An"},{"t":"Space","c":[]},{"t":"Str","c":"h1"},{"t":"Space","c":[]},{"t":"Str","c":"header"}]]},{"t":"Para","c":[{"t":"Str","c":"Paragraphs"},{"t":"Space","c":[]},{"t":"Str","c":"are"},{"t":"Space","c":[]},{"t":"Str","c":"separated"},{"t":"Space","c":[]},{"t":"Str","c":"by"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"blank"},{"t":"Space","c":[]},{"t":"Str","c":"line."}]},{"t":"Para","c":[{"t":"Str","c":"2nd"},{"t":"Space","c":[]},{"t":"Str","c":"paragraph."},{"t":"Space","c":[]},{"t":"Emph","c":[{"t":"Str","c":"Italic"}]},{"t":"Str","c":","},{"t":"Space","c":[]},{"t":"Strong","c":[{"t":"Str","c":"bold"}]},{"t":"Str","c":","},{"t":"Space","c":[]},{"t":"Str","c":"and"},{"t":"Space","c":[]},{"t":"Code","c":[["",[],[]],"monospace"]},{"t":"Str","c":"."},{"t":"Space","c":[]},{"t":"Str","c":"Itemized"},{"t":"Space","c":[]},{"t":"Str","c":"lists"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"look"},{"t":"Space","c":[]},{"t":"Str","c":"like:"}]},{"t":"BulletList","c":[[{"t":"Plain","c":[{"t":"Str","c":"this"},{"t":"Space","c":[]},{"t":"Str","c":"one"}]}],[{"t":"Plain","c":[{"t":"Str","c":"that"},{"t":"Space","c":[]},{"t":"Str","c":"one"}]}],[{"t":"Plain","c":[{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"other"},{"t":"Space","c":[]},{"t":"Str","c":"one"}]}]]},{"t":"Para","c":[{"t":"Str","c":"Note"},{"t":"Space","c":[]},{"t":"Str","c":"that"},{"t":"Space","c":[]},{"t":"Str","c":"---"},{"t":"Space","c":[]},{"t":"Str","c":"not"},{"t":"Space","c":[]},{"t":"Str","c":"considering"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"asterisk"},{"t":"Space","c":[]},{"t":"Str","c":"---"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"actual"},{"t":"Space","c":[]},{"t":"Str","c":"text"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"content"},{"t":"Space","c":[]},{"t":"Str","c":"starts"},{"t":"Space","c":[]},{"t":"Str","c":"at"},{"t":"Space","c":[]},{"t":"Str","c":"4-columns"},{"t":"Space","c":[]},{"t":"Str","c":"in."}]},{"t":"BlockQuote","c":[{"t":"Para","c":[{"t":"Str","c":"Block"},{"t":"Space","c":[]},{"t":"Str","c":"quotes"},{"t":"Space","c":[]},{"t":"Str","c":"are"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"written"},{"t":"Space","c":[]},{"t":"Str","c":"like"},{"t":"Space","c":[]},{"t":"Str","c":"so."}]},{"t":"Para","c":[{"t":"Str","c":"They"},{"t":"Space","c":[]},{"t":"Str","c":"can"},{"t":"Space","c":[]},{"t":"Str","c":"span"},{"t":"Space","c":[]},{"t":"Str","c":"multiple"},{"t":"Space","c":[]},{"t":"Str","c":"paragraphs,"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"if"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"like."}]}]},{"t":"Para","c":[{"t":"Str","c":"Use"},{"t":"Space","c":[]},{"t":"Str","c":"3"},{"t":"Space","c":[]},{"t":"Str","c":"dashes"},{"t":"Space","c":[]},{"t":"Str","c":"for"},{"t":"Space","c":[]},{"t":"Str","c":"an"},{"t":"Space","c":[]},{"t":"Str","c":"em-dash."},{"t":"Space","c":[]},{"t":"Str","c":"Use"},{"t":"Space","c":[]},{"t":"Str","c":"2"},{"t":"Space","c":[]},{"t":"Str","c":"dashes"},{"t":"Space","c":[]},{"t":"Str","c":"for"},{"t":"Space","c":[]},{"t":"Str","c":"ranges"},{"t":"Space","c":[]},{"t":"Str","c":"(ex.,"},{"t":"Space","c":[]},{"t":"Str","c":"\"it's"},{"t":"Space","c":[]},{"t":"Str","c":"all"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"chapters"},{"t":"Space","c":[]},{"t":"Str","c":"12--14\")."},{"t":"Space","c":[]},{"t":"Str","c":"Three"},{"t":"Space","c":[]},{"t":"Str","c":"dots"},{"t":"Space","c":[]},{"t":"Str","c":"..."},{"t":"Space","c":[]},{"t":"Str","c":"will"},{"t":"Space","c":[]},{"t":"Str","c":"be"},{"t":"Space","c":[]},{"t":"Str","c":"converted"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"an"},{"t":"Space","c":[]},{"t":"Str","c":"ellipsis."},{"t":"SoftBreak","c":[]},{"t":"Str","c":"Unicode"},{"t":"Space","c":[]},{"t":"Str","c":"is"},{"t":"Space","c":[]},{"t":"Str","c":"supported."},{"t":"Space","c":[]},{"t":"Str","c":"☺"}]},{"t":"Header","c":[2,["an-h2-header",[],[]],[{"t":"Str","c":"An"},{"t":"Space","c":[]},{"t":"Str","c":"h2"},{"t":"Space","c":[]},{"t":"Str","c":"header"}]]},{"t":"Para","c":[{"t":"Str","c":"Here's"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"numbered"},{"t":"Space","c":[]},{"t":"Str","c":"list:"}]},{"t":"OrderedList","c":[[1,{"t":"Decimal","c":[]},{"t":"Period","c":[]}],[[{"t":"Plain","c":[{"t":"Str","c":"first"},{"t":"Space","c":[]},{"t":"Str","c":"item"}]}],[{"t":"Plain","c":[{"t":"Str","c":"second"},{"t":"Space","c":[]},{"t":"Str","c":"item"}]}],[{"t":"Plain","c":[{"t":"Str","c":"third"},{"t":"Space","c":[]},{"t":"Str","c":"item"}]}]]]},{"t":"Para","c":[{"t":"Str","c":"Note"},{"t":"Space","c":[]},{"t":"Str","c":"again"},{"t":"Space","c":[]},{"t":"Str","c":"how"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"actual"},{"t":"Space","c":[]},{"t":"Str","c":"text"},{"t":"Space","c":[]},{"t":"Str","c":"starts"},{"t":"Space","c":[]},{"t":"Str","c":"at"},{"t":"Space","c":[]},{"t":"Str","c":"4"},{"t":"Space","c":[]},{"t":"Str","c":"columns"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"(4"},{"t":"Space","c":[]},{"t":"Str","c":"characters"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"from"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"left"},{"t":"Space","c":[]},{"t":"Str","c":"side)."},{"t":"Space","c":[]},{"t":"Str","c":"Here's"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"code"},{"t":"Space","c":[]},{"t":"Str","c":"sample:"}]},{"t":"CodeBlock","c":[["",[],[]],"# Let me re-iterate ...\nfor i in 1 .. 10 { do-something(i) }"]},{"t":"Para","c":[{"t":"Str","c":"As"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"probably"},{"t":"Space","c":[]},{"t":"Str","c":"guessed,"},{"t":"Space","c":[]},{"t":"Str","c":"indented"},{"t":"Space","c":[]},{"t":"Str","c":"4"},{"t":"Space","c":[]},{"t":"Str","c":"spaces."},{"t":"Space","c":[]},{"t":"Str","c":"By"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"way,"},{"t":"Space","c":[]},{"t":"Str","c":"instead"},{"t":"Space","c":[]},{"t":"Str","c":"of"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"indenting"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"block,"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"can"},{"t":"Space","c":[]},{"t":"Str","c":"use"},{"t":"Space","c":[]},{"t":"Str","c":"delimited"},{"t":"Space","c":[]},{"t":"Str","c":"blocks,"},{"t":"Space","c":[]},{"t":"Str","c":"if"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"like:"}]},{"t":"CodeBlock","c":[["",[],[]],"define foobar() {\n    print \"Welcome to flavor country!\";\n}"]},{"t":"Para","c":[{"t":"Str","c":"(which"},{"t":"Space","c":[]},{"t":"Str","c":"makes"},{"t":"Space","c":[]},{"t":"Str","c":"copying"},{"t":"Space","c":[]},{"t":"Str","c":"&"},{"t":"Space","c":[]},{"t":"Str","c":"pasting"},{"t":"Space","c":[]},{"t":"Str","c":"easier)."},{"t":"Space","c":[]},{"t":"Str","c":"You"},{"t":"Space","c":[]},{"t":"Str","c":"can"},{"t":"Space","c":[]},{"t":"Str","c":"optionally"},{"t":"Space","c":[]},{"t":"Str","c":"mark"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"delimited"},{"t":"Space","c":[]},{"t":"Str","c":"block"},{"t":"Space","c":[]},{"t":"Str","c":"for"},{"t":"Space","c":[]},{"t":"Str","c":"Pandoc"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"syntax"},{"t":"Space","c":[]},{"t":"Str","c":"highlight"},{"t":"Space","c":[]},{"t":"Str","c":"it:"}]},{"t":"CodeBlock","c":[["",["python"],[]],"import time\n# Quick, count to ten!\nfor i in range(10):\n    # (but not *too* quick)\n    time.sleep(0.5)\n    print i"]},{"t":"Header","c":[3,["an-h3-header",[],[]],[{"t":"Str","c":"An"},{"t":"Space","c":[]},{"t":"Str","c":"h3"},{"t":"Space","c":[]},{"t":"Str","c":"header"}]]},{"t":"Para","c":[{"t":"Str","c":"Now"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"nested"},{"t":"Space","c":[]},{"t":"Str","c":"list:"}]},{"t":"OrderedList","c":[[1,{"t":"Decimal","c":[]},{"t":"Period","c":[]}],[[{"t":"Para","c":[{"t":"Str","c":"First,"},{"t":"Space","c":[]},{"t":"Str","c":"get"},{"t":"Space","c":[]},{"t":"Str","c":"these"},{"t":"Space","c":[]},{"t":"Str","c":"ingredients:"}]},{"t":"BulletList","c":[[{"t":"Plain","c":[{"t":"Str","c":"carrots"}]}],[{"t":"Plain","c":[{"t":"Str","c":"celery"}]}],[{"t":"Plain","c":[{"t":"Str","c":"lentils"}]}]]}],[{"t":"Para","c":[{"t":"Str","c":"Boil"},{"t":"Space","c":[]},{"t":"Str","c":"some"},{"t":"Space","c":[]},{"t":"Str","c":"water."}]}],[{"t":"Para","c":[{"t":"Str","c":"Dump"},{"t":"Space","c":[]},{"t":"Str","c":"everything"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"pot"},{"t":"Space","c":[]},{"t":"Str","c":"and"},{"t":"Space","c":[]},{"t":"Str","c":"follow"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"this"},{"t":"Space","c":[]},{"t":"Str","c":"algorithm:"}]},{"t":"CodeBlock","c":[["",[],[]],"find wooden spoon\nuncover pot\nstir\ncover pot\nbalance wooden spoon precariously on pot handle\nwait 10 minutes\ngoto first step (or shut off burner when done)"]},{"t":"Para","c":[{"t":"Str","c":"Do"},{"t":"Space","c":[]},{"t":"Str","c":"not"},{"t":"Space","c":[]},{"t":"Str","c":"bump"},{"t":"Space","c":[]},{"t":"Str","c":"wooden"},{"t":"Space","c":[]},{"t":"Str","c":"spoon"},{"t":"Space","c":[]},{"t":"Str","c":"or"},{"t":"Space","c":[]},{"t":"Str","c":"it"},{"t":"Space","c":[]},{"t":"Str","c":"will"},{"t":"Space","c":[]},{"t":"Str","c":"fall."}]}]]]},{"t":"Para","c":[{"t":"Str","c":"Notice"},{"t":"Space","c":[]},{"t":"Str","c":"again"},{"t":"Space","c":[]},{"t":"Str","c":"how"},{"t":"Space","c":[]},{"t":"Str","c":"text"},{"t":"Space","c":[]},{"t":"Str","c":"always"},{"t":"Space","c":[]},{"t":"Str","c":"lines"},{"t":"Space","c":[]},{"t":"Str","c":"up"},{"t":"Space","c":[]},{"t":"Str","c":"on"},{"t":"Space","c":[]},{"t":"Str","c":"4-space"},{"t":"Space","c":[]},{"t":"Str","c":"indents"},{"t":"Space","c":[]},{"t":"Str","c":"(including"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"that"},{"t":"Space","c":[]},{"t":"Str","c":"last"},{"t":"Space","c":[]},{"t":"Str","c":"line"},{"t":"Space","c":[]},{"t":"Str","c":"which"},{"t":"Space","c":[]},{"t":"Str","c":"continues"},{"t":"Space","c":[]},{"t":"Str","c":"item"},{"t":"Space","c":[]},{"t":"Str","c":"3"},{"t":"Space","c":[]},{"t":"Str","c":"above)."}]},{"t":"Para","c":[{"t":"Str","c":"Here's"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"link"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Link","c":[["",[],[]],[{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"website"}],["http://foo.bar",""]]},{"t":"Str","c":","},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Link","c":[["",[],[]],[{"t":"Str","c":"local"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"doc"}],["local-doc.html",""]]},{"t":"Str","c":","},{"t":"Space","c":[]},{"t":"Str","c":"and"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Link","c":[["",[],[]],[{"t":"Str","c":"section"},{"t":"Space","c":[]},{"t":"Str","c":"heading"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"the"},{"t":"Space","c":[]},{"t":"Str","c":"current"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"doc"}],["#an-h2-header",""]]},{"t":"Str","c":"."},{"t":"Space","c":[]},{"t":"Str","c":"Here's"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"footnote"},{"t":"Space","c":[]},{"t":"Note","c":[{"t":"Para","c":[{"t":"Str","c":"Footnote"},{"t":"Space","c":[]},{"t":"Str","c":"text"},{"t":"Space","c":[]},{"t":"Str","c":"goes"},{"t":"Space","c":[]},{"t":"Str","c":"here."}]}]},{"t":"Str","c":"."}]},{"t":"Para","c":[{"t":"Str","c":"A"},{"t":"Space","c":[]},{"t":"Str","c":"horizontal"},{"t":"Space","c":[]},{"t":"Str","c":"rule"},{"t":"Space","c":[]},{"t":"Str","c":"follows."}]},{"t":"HorizontalRule","c":[]},{"t":"Para","c":[{"t":"Str","c":"Here's"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"definition"},{"t":"Space","c":[]},{"t":"Str","c":"list:"}]},{"t":"DefinitionList","c":[[[{"t":"Str","c":"apples"}],[[{"t":"Plain","c":[{"t":"Str","c":"Good"},{"t":"Space","c":[]},{"t":"Str","c":"for"},{"t":"Space","c":[]},{"t":"Str","c":"making"},{"t":"Space","c":[]},{"t":"Str","c":"applesauce."},{"t":"SoftBreak","c":[]},{"t":"Str","c":"oranges"}]}],[{"t":"Plain","c":[{"t":"Str","c":"Citrus!"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"tomatoes"}]}],[{"t":"Plain","c":[{"t":"Str","c":"There's"},{"t":"Space","c":[]},{"t":"Str","c":"no"},{"t":"Space","c":[]},{"t":"Str","c":"\"e\""},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"tomatoe."}]}]]]]},{"t":"Para","c":[{"t":"Str","c":"Again,"},{"t":"Space","c":[]},{"t":"Str","c":"text"},{"t":"Space","c":[]},{"t":"Str","c":"is"},{"t":"Space","c":[]},{"t":"Str","c":"indented"},{"t":"Space","c":[]},{"t":"Str","c":"4"},{"t":"Space","c":[]},{"t":"Str","c":"spaces."},{"t":"Space","c":[]},{"t":"Str","c":"(Put"},{"t":"Space","c":[]},{"t":"Str","c":"a"},{"t":"Space","c":[]},{"t":"Str","c":"blank"},{"t":"Space","c":[]},{"t":"Str","c":"line"},{"t":"Space","c":[]},{"t":"Str","c":"between"},{"t":"Space","c":[]},{"t":"Str","c":"each"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"term/definition"},{"t":"Space","c":[]},{"t":"Str","c":"pair"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"spread"},{"t":"Space","c":[]},{"t":"Str","c":"things"},{"t":"Space","c":[]},{"t":"Str","c":"out"},{"t":"Space","c":[]},{"t":"Str","c":"more.)"}]},{"t":"Para","c":[{"t":"Str","c":"and"},{"t":"Space","c":[]},{"t":"Str","c":"images"},{"t":"Space","c":[]},{"t":"Str","c":"can"},{"t":"Space","c":[]},{"t":"Str","c":"be"},{"t":"Space","c":[]},{"t":"Str","c":"specified"},{"t":"Space","c":[]},{"t":"Str","c":"like"},{"t":"Space","c":[]},{"t":"Str","c":"so:"}]},{"t":"Para","c":[{"t":"Image","c":[["",[],[]],[{"t":"Str","c":"example"},{"t":"Space","c":[]},{"t":"Str","c":"image"}],["example-image.jpg","fig:An exemplary image"]]}]},{"t":"Para","c":[{"t":"Str","c":"Inline"},{"t":"Space","c":[]},{"t":"Str","c":"math"},{"t":"Space","c":[]},{"t":"Str","c":"equations"},{"t":"Space","c":[]},{"t":"Str","c":"go"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"like"},{"t":"Space","c":[]},{"t":"Str","c":"so:"},{"t":"Space","c":[]},{"t":"Math","c":[{"t":"InlineMath","c":[]},"\\omega = d\\phi / dt"]},{"t":"Str","c":"."},{"t":"Space","c":[]},{"t":"Str","c":"Display"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"math"},{"t":"Space","c":[]},{"t":"Str","c":"should"},{"t":"Space","c":[]},{"t":"Str","c":"get"},{"t":"Space","c":[]},{"t":"Str","c":"its"},{"t":"Space","c":[]},{"t":"Str","c":"own"},{"t":"Space","c":[]},{"t":"Str","c":"line"},{"t":"Space","c":[]},{"t":"Str","c":"and"},{"t":"Space","c":[]},{"t":"Str","c":"be"},{"t":"Space","c":[]},{"t":"Str","c":"put"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"in"},{"t":"Space","c":[]},{"t":"Str","c":"double-dollarsigns:"}]},{"t":"Para","c":[{"t":"Math","c":[{"t":"DisplayMath","c":[]},"I = \\int \\rho R^{2} dV"]}]},{"t":"Para","c":[{"t":"Str","c":"And"},{"t":"Space","c":[]},{"t":"Str","c":"note"},{"t":"Space","c":[]},{"t":"Str","c":"that"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"can"},{"t":"Space","c":[]},{"t":"Str","c":"backslash-escape"},{"t":"Space","c":[]},{"t":"Str","c":"any"},{"t":"Space","c":[]},{"t":"Str","c":"punctuation"},{"t":"Space","c":[]},{"t":"Str","c":"characters"},{"t":"SoftBreak","c":[]},{"t":"Str","c":"which"},{"t":"Space","c":[]},{"t":"Str","c":"you"},{"t":"Space","c":[]},{"t":"Str","c":"wish"},{"t":"Space","c":[]},{"t":"Str","c":"to"},{"t":"Space","c":[]},{"t":"Str","c":"be"},{"t":"Space","c":[]},{"t":"Str","c":"displayed"},{"t":"Space","c":[]},{"t":"Str","c":"literally,"},{"t":"Space","c":[]},{"t":"Str","c":"ex.:"},{"t":"Space","c":[]},{"t":"Str","c":"`foo`,"},{"t":"Space","c":[]},{"t":"Str","c":"*bar*,"},{"t":"Space","c":[]},{"t":"Str","c":"etc."}]}]]
+{
+    "pandoc-api-version": [
+        1,
+        23
+    ],
+    "meta": {},
+    "blocks": [
+        {
+            "t": "Header",
+            "c": [
+                1,
+                [
+                    "an-h1-header",
+                    [],
+                    []
+                ],
+                [
+                    {
+                        "t": "Str",
+                        "c": "An"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "h1"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "header"
+                    }
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Paragraphs"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "are"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "separated"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "by"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "blank"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "line."
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "2nd"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "paragraph."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Emph",
+                    "c": [
+                        {
+                            "t": "Str",
+                            "c": "Italic"
+                        }
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": ","
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Strong",
+                    "c": [
+                        {
+                            "t": "Str",
+                            "c": "bold"
+                        }
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": ","
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "and"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Code",
+                    "c": [
+                        [
+                            "",
+                            [],
+                            []
+                        ],
+                        "monospace"
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": "."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Itemized"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "lists"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "look"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "like:"
+                }
+            ]
+        },
+        {
+            "t": "BulletList",
+            "c": [
+                [
+                    {
+                        "t": "Plain",
+                        "c": [
+                            {
+                                "t": "Str",
+                                "c": "this"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "one"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "t": "Plain",
+                        "c": [
+                            {
+                                "t": "Str",
+                                "c": "that"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "one"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "t": "Plain",
+                        "c": [
+                            {
+                                "t": "Str",
+                                "c": "the"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "other"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "one"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Note"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "that"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "---"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "not"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "considering"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "asterisk"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "---"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "actual"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "text"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "content"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "starts"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "at"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "4-columns"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "in."
+                }
+            ]
+        },
+        {
+            "t": "BlockQuote",
+            "c": [
+                {
+                    "t": "Para",
+                    "c": [
+                        {
+                            "t": "Str",
+                            "c": "Block"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "quotes"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "are"
+                        },
+                        {
+                            "t": "SoftBreak"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "written"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "like"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "so."
+                        }
+                    ]
+                },
+                {
+                    "t": "Para",
+                    "c": [
+                        {
+                            "t": "Str",
+                            "c": "They"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "can"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "span"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "multiple"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "paragraphs,"
+                        },
+                        {
+                            "t": "SoftBreak"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "if"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "you"
+                        },
+                        {
+                            "t": "Space"
+                        },
+                        {
+                            "t": "Str",
+                            "c": "like."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Use"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "3"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "dashes"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "for"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "an"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "em-dash."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Use"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "2"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "dashes"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "for"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "ranges"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "(ex.,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "\"it's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "all"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "in"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "chapters"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "12--14\")."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Three"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "dots"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "..."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "will"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "be"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "converted"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "an"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "ellipsis."
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "Unicode"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "is"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "supported."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "☺"
+                }
+            ]
+        },
+        {
+            "t": "Header",
+            "c": [
+                2,
+                [
+                    "an-h2-header",
+                    [],
+                    []
+                ],
+                [
+                    {
+                        "t": "Str",
+                        "c": "An"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "h2"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "header"
+                    }
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Here's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "numbered"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "list:"
+                }
+            ]
+        },
+        {
+            "t": "OrderedList",
+            "c": [
+                [
+                    1,
+                    {
+                        "t": "Decimal"
+                    },
+                    {
+                        "t": "Period"
+                    }
+                ],
+                [
+                    [
+                        {
+                            "t": "Plain",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "first"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "item"
+                                }
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "t": "Plain",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "second"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "item"
+                                }
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "t": "Plain",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "third"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "item"
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Note"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "again"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "how"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "actual"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "text"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "starts"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "at"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "4"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "columns"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "in"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "(4"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "characters"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "from"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "left"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "side)."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Here's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "code"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "sample:"
+                }
+            ]
+        },
+        {
+            "t": "CodeBlock",
+            "c": [
+                [
+                    "",
+                    [],
+                    []
+                ],
+                "# Let me re-iterate ...\nfor i in 1 .. 10 { do-something(i) }"
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "As"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "you"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "probably"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "guessed,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "indented"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "4"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "spaces."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "By"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "way,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "instead"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "of"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "indenting"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "block,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "you"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "can"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "use"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "delimited"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "blocks,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "if"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "you"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "like:"
+                }
+            ]
+        },
+        {
+            "t": "CodeBlock",
+            "c": [
+                [
+                    "",
+                    [],
+                    []
+                ],
+                "define foobar() {\n    print \"Welcome to flavor country!\";\n}"
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "(which"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "makes"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "copying"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "&"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "pasting"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "easier)."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "You"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "can"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "optionally"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "mark"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "the"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "delimited"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "block"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "for"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Pandoc"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "syntax"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "highlight"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "it:"
+                }
+            ]
+        },
+        {
+            "t": "CodeBlock",
+            "c": [
+                [
+                    "",
+                    [
+                        "python"
+                    ],
+                    []
+                ],
+                "import time\n# Quick, count to ten!\nfor i in range(10):\n    # (but not *too* quick)\n    time.sleep(0.5)\n    print i"
+            ]
+        },
+        {
+            "t": "Header",
+            "c": [
+                3,
+                [
+                    "an-h3-header",
+                    [],
+                    []
+                ],
+                [
+                    {
+                        "t": "Str",
+                        "c": "An"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "h3"
+                    },
+                    {
+                        "t": "Space"
+                    },
+                    {
+                        "t": "Str",
+                        "c": "header"
+                    }
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Now"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "nested"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "list:"
+                }
+            ]
+        },
+        {
+            "t": "OrderedList",
+            "c": [
+                [
+                    1,
+                    {
+                        "t": "Decimal"
+                    },
+                    {
+                        "t": "Period"
+                    }
+                ],
+                [
+                    [
+                        {
+                            "t": "Para",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "First,"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "get"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "these"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "ingredients:"
+                                }
+                            ]
+                        },
+                        {
+                            "t": "BulletList",
+                            "c": [
+                                [
+                                    {
+                                        "t": "Plain",
+                                        "c": [
+                                            {
+                                                "t": "Str",
+                                                "c": "carrots"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                [
+                                    {
+                                        "t": "Plain",
+                                        "c": [
+                                            {
+                                                "t": "Str",
+                                                "c": "celery"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                [
+                                    {
+                                        "t": "Plain",
+                                        "c": [
+                                            {
+                                                "t": "Str",
+                                                "c": "lentils"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "t": "Para",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "Boil"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "some"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "water."
+                                }
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "t": "Para",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "Dump"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "everything"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "in"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "the"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "pot"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "and"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "follow"
+                                },
+                                {
+                                    "t": "SoftBreak"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "this"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "algorithm:"
+                                }
+                            ]
+                        },
+                        {
+                            "t": "CodeBlock",
+                            "c": [
+                                [
+                                    "",
+                                    [],
+                                    []
+                                ],
+                                "find wooden spoon\nuncover pot\nstir\ncover pot\nbalance wooden spoon precariously on pot handle\nwait 10 minutes\ngoto first step (or shut off burner when done)"
+                            ]
+                        },
+                        {
+                            "t": "Para",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "Do"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "not"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "bump"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "wooden"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "spoon"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "or"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "it"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "will"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "fall."
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Notice"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "again"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "how"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "text"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "always"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "lines"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "up"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "on"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "4-space"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "indents"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "(including"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "that"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "last"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "line"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "which"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "continues"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "item"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "3"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "above)."
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Here's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "link"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Link",
+                    "c": [
+                        [
+                            "",
+                            [],
+                            []
+                        ],
+                        [
+                            {
+                                "t": "Str",
+                                "c": "a"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "website"
+                            }
+                        ],
+                        [
+                            "http://foo.bar",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": ","
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Link",
+                    "c": [
+                        [
+                            "",
+                            [],
+                            []
+                        ],
+                        [
+                            {
+                                "t": "Str",
+                                "c": "local"
+                            },
+                            {
+                                "t": "SoftBreak"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "doc"
+                            }
+                        ],
+                        [
+                            "local-doc.html",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": ","
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "and"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Link",
+                    "c": [
+                        [
+                            "",
+                            [],
+                            []
+                        ],
+                        [
+                            {
+                                "t": "Str",
+                                "c": "section"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "heading"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "in"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "the"
+                            },
+                            {
+                                "t": "Space"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "current"
+                            },
+                            {
+                                "t": "SoftBreak"
+                            },
+                            {
+                                "t": "Str",
+                                "c": "doc"
+                            }
+                        ],
+                        [
+                            "#an-h2-header",
+                            ""
+                        ]
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": "."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Here's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "footnote"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Note",
+                    "c": [
+                        {
+                            "t": "Para",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "Footnote"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "text"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "goes"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "here."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": "."
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "A"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "horizontal"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "rule"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "follows."
+                }
+            ]
+        },
+        {
+            "t": "HorizontalRule"
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Here's"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "definition"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "list:"
+                }
+            ]
+        },
+        {
+            "t": "DefinitionList",
+            "c": [
+                [
+                    [
+                        {
+                            "t": "Str",
+                            "c": "apples"
+                        }
+                    ],
+                    [
+                        [
+                            {
+                                "t": "Plain",
+                                "c": [
+                                    {
+                                        "t": "Str",
+                                        "c": "Good"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "for"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "making"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "applesauce."
+                                    },
+                                    {
+                                        "t": "SoftBreak"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "oranges"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                "t": "Plain",
+                                "c": [
+                                    {
+                                        "t": "Str",
+                                        "c": "Citrus!"
+                                    },
+                                    {
+                                        "t": "SoftBreak"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "tomatoes"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                "t": "Plain",
+                                "c": [
+                                    {
+                                        "t": "Str",
+                                        "c": "There's"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "no"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "\"e\""
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "in"
+                                    },
+                                    {
+                                        "t": "Space"
+                                    },
+                                    {
+                                        "t": "Str",
+                                        "c": "tomatoe."
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Again,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "text"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "is"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "indented"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "4"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "spaces."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "(Put"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "a"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "blank"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "line"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "between"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "each"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "term/definition"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "pair"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "spread"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "things"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "out"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "more.)"
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "and"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "images"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "can"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "be"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "specified"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "like"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "so:"
+                }
+            ]
+        },
+        {
+            "t": "Figure",
+            "c": [
+                [
+                    "",
+                    [],
+                    []
+                ],
+                [
+                    null,
+                    [
+                        {
+                            "t": "Plain",
+                            "c": [
+                                {
+                                    "t": "Str",
+                                    "c": "example"
+                                },
+                                {
+                                    "t": "Space"
+                                },
+                                {
+                                    "t": "Str",
+                                    "c": "image"
+                                }
+                            ]
+                        }
+                    ]
+                ],
+                [
+                    {
+                        "t": "Plain",
+                        "c": [
+                            {
+                                "t": "Image",
+                                "c": [
+                                    [
+                                        "",
+                                        [],
+                                        []
+                                    ],
+                                    [
+                                        {
+                                            "t": "Str",
+                                            "c": "example"
+                                        },
+                                        {
+                                            "t": "Space"
+                                        },
+                                        {
+                                            "t": "Str",
+                                            "c": "image"
+                                        }
+                                    ],
+                                    [
+                                        "example-image.jpg",
+                                        "An exemplary image"
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "Inline"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "math"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "equations"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "go"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "in"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "like"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "so:"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Math",
+                    "c": [
+                        {
+                            "t": "InlineMath"
+                        },
+                        "\\omega = d\\phi / dt"
+                    ]
+                },
+                {
+                    "t": "Str",
+                    "c": "."
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "Display"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "math"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "should"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "get"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "its"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "own"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "line"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "and"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "be"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "put"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "in"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "in"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "double-dollarsigns:"
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Math",
+                    "c": [
+                        {
+                            "t": "DisplayMath"
+                        },
+                        "I = \\int \\rho R^{2} dV"
+                    ]
+                }
+            ]
+        },
+        {
+            "t": "Para",
+            "c": [
+                {
+                    "t": "Str",
+                    "c": "And"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "note"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "that"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "you"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "can"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "backslash-escape"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "any"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "punctuation"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "characters"
+                },
+                {
+                    "t": "SoftBreak"
+                },
+                {
+                    "t": "Str",
+                    "c": "which"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "you"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "wish"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "to"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "be"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "displayed"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "literally,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "ex.:"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "`foo`,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "*bar*,"
+                },
+                {
+                    "t": "Space"
+                },
+                {
+                    "t": "Str",
+                    "c": "etc."
+                }
+            ]
+        }
+    ]
+}
